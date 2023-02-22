@@ -23,4 +23,4 @@ jobs:
 
       - run: git tag ${{github.run_number}}
       - name: Execute Gradle build
-        run: ./gradlew :plugin:shadowJar
+        run: ./gradlew :run
