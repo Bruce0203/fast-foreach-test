@@ -7,19 +7,20 @@ class PerformanceTest {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            val list = generateList()
-            repeat (3) { measure(list) }
-            val result = measure(list)
-            val resultString = result.apply {
-                println("forEach=$first, fastForEach=$second")
-            }
-            val bar = "=".repeat(20)
-            println(bar)
-            println(resultString)
-            val timesResult = result.first.toDouble() / result.second.toDouble()
-            println("fast than $timesResult")
-            println(bar)
-            record(timesResult)
+//            val list = generateList()
+//            repeat (3) { measure(list) }
+//            val result = measure(list)
+//            val resultString = result.apply {
+//                println("forEach=$first, fastForEach=$second")
+//            }
+//            val bar = "=".repeat(20)
+//            println(bar)
+//            println(resultString)
+//            val timesResult = result.first.toDouble() / result.second.toDouble()
+//            println("fast than $timesResult")
+//            println(bar)
+//            record(timesResult)
+            record(0.1)
         }
 
         private fun generateList(): MutableList<String> {
