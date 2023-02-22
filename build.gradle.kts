@@ -17,5 +17,6 @@ repositories {
 dependencies {
     api("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     testApi("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
+    api("io.github.bruce0203:jgit:5")
 
 }
